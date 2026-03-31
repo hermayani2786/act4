@@ -17,5 +17,6 @@ int main(){
 
     //Perulangan dengan WHILE
     cout<<"PERULANGAN WHILE"<<endl;
-    
+    x = 1 + rand()%10;
+
 }
