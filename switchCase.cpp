@@ -5,3 +5,6 @@ using namespace std;
 int kodeJurusan;
 string namaJurusan;
 string statusKuota;
+
+// prosedur input
+void input() {
