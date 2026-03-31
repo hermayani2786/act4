@@ -16,4 +16,6 @@ int main(){
     srand(time(0));
 
     //Perulangan dengan WHILE
+    cout<<"PERULANGAN WHILE"<<endl;
+    
 }
