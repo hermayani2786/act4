@@ -8,11 +8,11 @@ int main(){
     //Perulangan dengan FOR
     //mencetak tulisan sebanyak 5 kali
     cout<<"PERULANGAN FOR"<<endl;
-    for( int i=0;i<=4;i++){
+    for( int i=0; i<=4; i++){
         cout<<"Teknologi Informasi UMY"<<endl;
     }
-    cout <<endl;
-    //untuk mendapatkan urutan angka acak yang berbeda
+    cout<<endl;
+    //untuk mendapatkan urutan acak yang berbeda
     srand(time(0));
 
     //Perulangan dengan WHILE
@@ -27,7 +27,7 @@ int main(){
     cout<<"Bilangan acak while yang terakhir ="<<x <<endl;
     cout<<endl;
 
-    //Perulangan dengan DO...WHILE
+    //Perulangan dengan DO....WHILE
     cout<<"PERULANGAN DO...WHILE"<<endl;
     x = 1 + rand()%10;
     do{
@@ -37,51 +37,39 @@ int main(){
 
     cout<<"Bilangan acak do-while yang terakhir ="<<x <<endl;
     cout<<endl;
-}
 
-//Logika not
-#include <iostream>
-using namespace std;
-
-int main(){
-    float nilB,nilM,rerata;
+//input nilai
+ float nilB,nilM,rerata;
     string status;
 
     cout<<"Masukkan nilai Matematika = ";
     cin>>nilM;
-    cout<<"Masukkan nilai Bahasa Inggris = ";
+    cout<<"Masukkan nilai Bahasa Inggrris = ";
     cin>>nilB;
 
     rerata = (nilB+nilM)/2;
+
+//Logika not
 
     if (!(rerata < 60) )
         status = "Lulus";
     else
-        status = "Tidak lulus";
-    
-    cout<<"Status kelulusan = "<<status<<" ,dengan nilai rata-rata = "<<rerata<<endl;
-}
+        status = "Tidak Lulus";
+    cout<<"Status Kelulusan = "<<status<<" ,dengan nilai rata-rata = "<<rerata<<endl;
+
 //Logika OR
-#include <iostream>
-using namespace std;
-
-int main(){
-    float nilB,nilM,rerata;
-    string status;
-
-    cout<<"Masukkan nilai Matematika = ";
-    cin>>nilM;
-    cout<<"Masukkan nilai Bahasa Inggris = ";
-    cin>>nilB;
-
-    rerata = (nilB+nilM)/2;
-
-    if ((rerata >= 60) || (nilM >= 70))
+    if((rerata >= 60) || (nilM >= 70))
         status = "Lulus";
     else
-        status = "Tidak lulus";
-    cout<<"Status kelulusan = "<<status<<" ,dengan nilai rata-rata =" <<rerata<<endl;
-}
+        status = "Tidak Lulus";
+    cout<<"Status kelulusan = "<<status<<" ,dengan nilai rata-rata = "<<rerata<<endl;
+
 
 //Logika AND
-#include <iostream>
+    if((rerata >=60) && (nilM >= 70))
+        status = "Lulus";
+    else
+        status = "Tidak Lulus";
+
+    cout<<"Status kelulusan = "<<status<<" ,dengan nilai rata-rata = "<<rerata<<endl;
+}
